@@ -3,6 +3,16 @@
 	<head>
 	<title>My Personal Page</title>
 	<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#toClick").click(function(){
+				$(".hideBox").fadeIn("slow");
+			
+			})
+			$(".box").css("color","blue");
+	  });
+	</script>
 		<style>
 		body{
 			background-image:url('http://i.imgur.com/eOta3Vi.jpg');
@@ -44,49 +54,41 @@
 			-webkit-transition:color 1s;
 			-o-transition:color 1s;    
 		
-		}
-		
-		</style>		
-		<body>
-		<br>
-		<br>
-		<br>
-		<div class="center">
-			<img class="myImage Image-border center" src="https://3.bp.blogspot.com/-jqKkUenA8LA/WDhKIlzG8tI/AAAAAAAArEQ/su4TxhsJUBotnQ9zJWFV-TVv2WmK7pQWwCLcB/s1600/image.jpeg" alt="my head image">
-		</div>
-		<br>
-		<div class="center box" style=" height:70px; width:500px">
-			
-				<h1>哈囉哈囉~!</h1>
-			
-		</div>
-		<br>
-		<div class="box" style="position:absolute; left:100px; height:500px; width:500px;text-align:center" >
-			<h1>個人簡介</h1>
-			<h3>姓名:王文君</h3>
-			<h3>系級:資訊工程四乙</h3>
-			<h3>學號:402262294</h3>
-			<h3>網頁連結:</h3>
-			<a href="https://github.com/wen-chung">
-				<img src="https://www.promptworks.com/images/svg/github-36330d3d20-ce3cd28d.svg" alt="github icon" style="height:100px; width:100px;">
-				</img>
-			</a>	
-		</div>
-		<div class="box" style="position:absolute; right:100px; height:500px; width:500px;text-align:center" >
-			<h1>興趣</h1>
-			<h3>看書</h3>
-			<h3>聽音樂</h3>
-			<h3>看電影</h3>
-		</div>
-		</body>
-		<script type="text/javascript">
-		  $(document).ready(function() {
-			$("div").addClass("animated bounce");
-			$(".box").css("color","blue");
-		  });
-		</script>
-	
+		}		
+		</style>
 	</head>
+	<body>
+	<br>
+	<br>
+	<br>
+	<div class="center">
+		<img class="myImage Image-border center" src="https://3.bp.blogspot.com/-jqKkUenA8LA/WDhKIlzG8tI/AAAAAAAArEQ/su4TxhsJUBotnQ9zJWFV-TVv2WmK7pQWwCLcB/s1600/image.jpeg" alt="my head image">
+	</div>
+	<br>
+	<div class="center box" id="toClick" style=" height:70px; width:500px">
+		
+			<h1>哈囉哈囉~!請點擊我~</h1>
+		
+	</div>
+	<br>
+	<div class="box hideBox" style="display:none;position:absolute; left:100px; height:500px; width:500px;text-align:center" >
+		<h1>個人簡介</h1>
+		<h3>姓名:王文君</h3>
+		<h3>系級:資訊工程四乙</h3>
+		<h3>學號:402262294</h3>
+		<h3>網頁連結:</h3>
+		<a href="https://github.com/wen-chung">
+			<img src="https://www.promptworks.com/images/svg/github-36330d3d20-ce3cd28d.svg" alt="github icon" style="height:100px; width:100px;">
+			</img>
+		</a>	
+	</div>
+	<div class="box hideBox" style="display:none;position:absolute; right:100px; height:500px; width:500px;text-align:center" >
+		<h1>興趣</h1>
+		<h3>看書</h3>
+		<h3>聽音樂</h3>
+		<h3>看電影</h3>
+	</div>
+	</body>
 
 
 </html>
